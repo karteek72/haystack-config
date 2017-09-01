@@ -1,0 +1,22 @@
+logging:
+  level:
+    org:
+      springframework:
+        security: ERROR
+        data: ERROR
+    com:
+      samsung:
+        haystack: DEBUG
+      netflix:
+        zuul: ERROR
+endpoints:
+  actuator:
+    enabled: true
+  health:
+    enabled: true
+    sensitive: false
+  info:
+    enabled: true
+management:
+  security:
+    enabled: false
