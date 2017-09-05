@@ -1,0 +1,19 @@
+info:
+  app:
+    name: api-gateway
+    description: Zuul API Gateway
+    version: 1.0.0-SNAPSHOT
+# Define the port where the API gateway server would be running
+server:
+  port: 8765
+zuul:
+  ignoredServices: '*'
+  routes:
+    devices-webservice:
+      path: /api/devices/**
+      serviceId: devices-webservice
+      stripPrefix: false
+    reservation-webservice:
+      path: /api/reservations/**
+      serviceId: reservation-service
+      stripPrefix: false
