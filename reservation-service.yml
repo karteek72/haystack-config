@@ -1,0 +1,16 @@
+info:
+  app:
+    name: Reservations  Service
+    description: RestFul Application Holding Reservations for Devices
+    version: 1.0-SNAPSHOT
+server:
+  port: 8087
+  contextPath: /reservation-service
+spring:
+  application:
+    name: reservation-service
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: reservations

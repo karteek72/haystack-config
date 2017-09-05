@@ -1,0 +1,14 @@
+info:
+  app:
+    name: Devices Web Service
+    description: RestFul Application Holding Devices
+    version: 1.0-SNAPSHOT
+server:
+  port: 8086
+  contextPath: /devices-service
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: devices

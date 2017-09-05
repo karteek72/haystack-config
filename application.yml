@@ -20,3 +20,16 @@ endpoints:
 management:
   security:
     enabled: false
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+    consul:
+      discovery:
+        enabled: true
+        register-health-check: true
+        register: true
+        fail-fast: false
+        health-check-path:  ${server.contextPath}/health
+      config:
+        enabled: true
