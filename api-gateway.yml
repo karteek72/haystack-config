@@ -6,14 +6,15 @@ info:
 # Define the port where the API gateway server would be running
 server:
   port: 8765
+  contextPath:
 zuul:
   ignoredServices: '*'
   routes:
-    device-wervice:
-      path: /api/devices/**
+    device-service:
+      path: /device-service/**
       serviceId: device-service
-      stripPrefix: true
+      stripPrefix: false
     reservation-service:
-      path: /api/reservations/**
+      path: /reservation-service/**
       serviceId: reservation-service
-      stripPrefix: true
+      stripPrefix: false
