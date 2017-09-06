@@ -9,11 +9,11 @@ server:
 zuul:
   ignoredServices: '*'
   routes:
-    devices-webservice:
+    device-wervice:
       path: /api/devices/**
-      serviceId: devices-webservice
-      stripPrefix: false
-    reservation-webservice:
+      serviceId: device-service
+      stripPrefix: true
+    reservation-service:
       path: /api/reservations/**
       serviceId: reservation-service
-      stripPrefix: false
+      stripPrefix: true
