@@ -3,7 +3,7 @@ logging:
     org:
       springframework:
         security: ERROR
-        data: ERROR
+        data: DEBUG
     com:
       samsung:
         haystack: DEBUG
