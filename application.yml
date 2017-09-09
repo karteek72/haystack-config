@@ -23,8 +23,10 @@ management:
 spring:
   cloud:
     config:
-      uri: http://localhost:8888
+      uri: http://config-server:8888
     consul:
+      host: consul
+      port: 8500
       discovery:
         enabled: true
         register-health-check: true

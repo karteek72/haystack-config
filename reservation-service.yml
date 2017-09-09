@@ -11,6 +11,6 @@ spring:
     name: reservation-service
   data:
     mongodb:
-      host: localhost
+      host: mongodb
       port: 27017
       database: reservations
