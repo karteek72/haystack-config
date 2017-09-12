@@ -1,0 +1,16 @@
+info:
+  app:
+    name: Upload Service
+    description: RestFul Application Storing User APK's
+    version: 1.0.0-SNAPSHOT
+server:
+  port: 8088
+  contextPath: /upload-service
+spring:
+  application:
+    name: upload-service
+  data:
+    mongodb:
+      host: mongodb
+      port: 27017
+      database: user-apks
