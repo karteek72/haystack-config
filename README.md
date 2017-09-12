@@ -1,1 +1,1 @@
-# haystack-config
+# haystack-com.samsung.haystack.config
