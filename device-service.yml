@@ -12,3 +12,15 @@ spring:
       host: mongodb
       port: 27017
       database: devices
+keycloak:
+  enabled: true
+  enable-basic-auth: false
+  realm: Haystack
+  auth-server-url:  http://keycloak:8080/auth
+  ssl-required: external # no ssl is ok for demo  - do not use this in production
+  public-client: false # we do not write a web-app - so no login page and redirects are necessary
+  resource: device-service
+  bearer-only: true  # authentication via accesstoken is fine
+  credentials:
+    secret: b6b417d7-dd3c-4838-862b-6e15d8379082
+  use-resource-role-mappings: true
