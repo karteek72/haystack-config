@@ -22,5 +22,5 @@ keycloak:
   resource: device-service
   bearer-only: true  # authentication via accesstoken is fine
   credentials:
-    secret: b6b417d7-dd3c-4838-862b-6e15d8379082
+    secret: 4cbfee7f-e8e1-4c93-b01a-9b60766f4621
   use-resource-role-mappings: true
