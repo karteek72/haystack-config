@@ -15,8 +15,7 @@ spring:
 keycloak:
   enabled: true
   enable-basic-auth: false
-  realm: spring-demo
-  #realm-public-key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCh65Gqi3BSaVe12JHlqChWm8WscICrj46MVqmRoO9FCmqbxEpCQhE1RLjW+GDyc3YdXW3xqUQ3AZxDkTmN1h6BWkhdxPLzA4EnwgWmGurhyJlUF9Id2tKns0jbC+Z7kIb2LcOiKHKL7mRb3q7EtWubNnrvunv8fx+WeXGaQoGEVQIDAQAB
+  realm: haystack
   auth-server-url:  http://10.0.75.1:8080/auth
   ssl-required: external # no ssl is ok for demo  - do not use this in production
   public-client: false # we do not write a web-app - so no login page and redirects are necessary
