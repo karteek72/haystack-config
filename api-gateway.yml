@@ -8,6 +8,7 @@ server:
   port: 8765
   contextPath:
 zuul:
+  sensitive-headers: Authorization, Cookie, Set-Cookie
   ignoredServices: '*'
   routes:
     device-service:
@@ -18,3 +19,27 @@ zuul:
       path: /reservation-service/**
       serviceId: reservation-service
       stripPrefix: false
+    upload-service:
+      path: /upload-service/**
+      serviceId: upload-service
+      stripPrefix: false
+keycloak:
+  enabled: true
+  enable-basic-auth: false
+  realm: haystack
+  auth-server-url:  http://10.0.75.1:8080/auth
+  ssl-required: external # no ssl is ok for demo  - do not use this in production
+  public-client: true # we do not write a web-app - so no login page and redirects are necessary
+  resource: api-gateway
+  bearer-only: false  # authentication via accesstoken is fine
+  credentials:
+    secret: c6a4614c-9a13-4f77-a1b3-c125fc3d395c
+  use-resource-role-mappings: true
+security:
+  oauth2:
+    client:
+      access-token-uri: http://10.0.75.1:8080/auth/realms/haystack/protocol/openid-connect/token
+      userAuthorizationUri: http://10.0.75.1:8080/auth/realms/haystack/protocol/openid-connect/auth
+      clientId:
+      clientSecret: c6a4614c-9a13-4f77-a1b3-c125fc3d395c
+      user-info-url: http://10.0.75.1:8080/auth/realms/haystack/protocol/openid-connect/userinfo
