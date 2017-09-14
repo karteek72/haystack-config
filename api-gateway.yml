@@ -33,7 +33,7 @@ keycloak:
   resource: api-gateway
   bearer-only: false  # authentication via accesstoken is fine
   credentials:
-    secret: c6a4614c-9a13-4f77-a1b3-c125fc3d395c
+    secret: 6795e4e5-dbbf-465b-9eb5-0f7c5183402f
   use-resource-role-mappings: true
 security:
   oauth2:
@@ -41,5 +41,5 @@ security:
       access-token-uri: http://10.0.75.1:8080/auth/realms/haystack/protocol/openid-connect/token
       userAuthorizationUri: http://10.0.75.1:8080/auth/realms/haystack/protocol/openid-connect/auth
       clientId:
-      clientSecret: c6a4614c-9a13-4f77-a1b3-c125fc3d395c
+      clientSecret: 6795e4e5-dbbf-465b-9eb5-0f7c5183402f
       user-info-url: http://10.0.75.1:8080/auth/realms/haystack/protocol/openid-connect/userinfo
