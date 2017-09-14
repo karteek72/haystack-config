@@ -15,12 +15,13 @@ spring:
 keycloak:
   enabled: true
   enable-basic-auth: false
-  realm: Haystack
+  realm: spring-demo
+  realm-public-key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCh65Gqi3BSaVe12JHlqChWm8WscICrj46MVqmRoO9FCmqbxEpCQhE1RLjW+GDyc3YdXW3xqUQ3AZxDkTmN1h6BWkhdxPLzA4EnwgWmGurhyJlUF9Id2tKns0jbC+Z7kIb2LcOiKHKL7mRb3q7EtWubNnrvunv8fx+WeXGaQoGEVQIDAQAB
   auth-server-url:  http://keycloak:8080/auth
   ssl-required: external # no ssl is ok for demo  - do not use this in production
   public-client: false # we do not write a web-app - so no login page and redirects are necessary
   resource: device-service
   bearer-only: true  # authentication via accesstoken is fine
   credentials:
-    secret: 4cbfee7f-e8e1-4c93-b01a-9b60766f4621
+    secret: dc8aab63-ebbf-4e90-9ff5-52d3489f6a1c
   use-resource-role-mappings: true
