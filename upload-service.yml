@@ -11,7 +11,7 @@ spring:
     name: upload-service
   data:
     mongodb:
-      host: mongodb
+      host: 10.0.75.1
       port: 27017
       database: user-apks
 keycloak:
@@ -21,7 +21,7 @@ keycloak:
   auth-server-url:  http://10.0.75.1:8080/auth
   ssl-required: external # no ssl is ok for demo  - do not use this in production
   public-client: false # we do not write a web-app - so no login page and redirects are necessary
-  resource: reservation-service
+  resource: upload-service
   bearer-only: true  # authentication via accesstoken is fine
   credentials:
     secret: 9c05d3f9-b8af-400d-9876-9173db088c15
