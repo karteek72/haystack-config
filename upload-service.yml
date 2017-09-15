@@ -26,3 +26,4 @@ keycloak:
   credentials:
     secret: 9c05d3f9-b8af-400d-9876-9173db088c15
   use-resource-role-mappings: true
+  principal-attribute: preferred_username
