@@ -33,8 +33,9 @@ keycloak:
   resource: api-gateway
   bearer-only: false  # authentication via accesstoken is fine
   credentials:
-    secret: 6795e4e5-dbbf-465b-9eb5-0f7c5183402f
+    secret: 6dbbdb8d-968b-4e02-a9e3-b46cf96da07d
   use-resource-role-mappings: true
+    principal-attribute: preferred_username
 security:
   oauth2:
     client:
