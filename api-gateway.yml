@@ -27,7 +27,7 @@ keycloak:
   enabled: true
   enable-basic-auth: false
   realm: haystack
-  auth-server-url:  http://10.0.75.1:8080/auth
+  auth-server-url:  http://haystack:8080/auth
   ssl-required: external # no ssl is ok for demo  - do not use this in production
   public-client: true # we do not write a web-app - so no login page and redirects are necessary
   resource: api-gateway
@@ -38,8 +38,8 @@ keycloak:
 security:
   oauth2:
     client:
-      access-token-uri: http://10.0.75.1:8080/auth/realms/haystack/protocol/openid-connect/token
-      userAuthorizationUri: http://10.0.75.1:8080/auth/realms/haystack/protocol/openid-connect/auth
+      access-token-uri: http://haystack:8080/auth/realms/haystack/protocol/openid-connect/token
+      userAuthorizationUri: http://haystack:8080/auth/realms/haystack/protocol/openid-connect/auth
       clientId:
       clientSecret: 6795e4e5-dbbf-465b-9eb5-0f7c5183402f
-      user-info-url: http://10.0.75.1:8080/auth/realms/haystack/protocol/openid-connect/userinfo
+      user-info-url: http://haystack:8080/auth/realms/haystack/protocol/openid-connect/userinfo
