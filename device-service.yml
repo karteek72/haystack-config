@@ -9,7 +9,7 @@ server:
 spring:
   data:
     mongodb:
-      host: localhost
+      host: mongodb
       port: 27017
       database: devices
 keycloak:
