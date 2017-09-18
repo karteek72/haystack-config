@@ -11,6 +11,9 @@ zuul:
   sensitive-headers: Authorization
   ignoredServices: '*'
   routes:
+    user:
+      path: /user/**
+      url: http://ec2-54-87-196-13.compute-1.amazonaws.com/auth/realms/Zuul/protocol/openid-connect/userinfo
     device-service:
       path: /device-service/**
       serviceId: device-service
@@ -23,16 +26,16 @@ zuul:
       path: /upload-service/**
       serviceId: upload-service
       stripPrefix: false
-keycloak:
-  enabled: true
-  enable-basic-auth: false
-  realm: haystack
-  auth-server-url:  http://haystack:8080/auth
-  ssl-required: external # no ssl is ok for demo  - do not use this in production
-  public-client: true # we do not write a web-app - so no login page and redirects are necessary
-  resource: api-gateway
-  bearer-only: false  # authentication via accesstoken is fine
-  credentials:
-    secret: 6dbbdb8d-968b-4e02-a9e3-b46cf96da07d
-  use-resource-role-mappings: true
-    principal-attribute: preferred_username
+spring:
+  oauth2:
+    sso:
+      home:
+        secure: false
+        path: /,/**/*.html
+    client:
+      accessTokenUri: http://ec2-54-87-196-13.compute-1.amazonaws.com/auth/realms/haystack/protocol/openid-connect/token
+      userAuthorizationUri: http://ec2-54-87-196-13.compute-1.amazonaws.com/auth/realms/haystack/protocol/openid-connect/auth
+      clientId: acme
+      clientSecret: acmesecret
+    resource:
+      userInfoUri: http://ec2-54-87-196-13.compute-1.amazonaws.com/auth/realms/Zuul/protocol/openid-connect/userinfo
