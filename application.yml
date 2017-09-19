@@ -9,7 +9,7 @@ logging:
       samsung:
         haystack: DEBUG
       netflix:
-        zuul: ERROR
+        zuul: DEBUG
 endpoints:
   actuator:
     enabled: true
