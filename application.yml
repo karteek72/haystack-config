@@ -3,13 +3,13 @@ logging:
     org:
       springframework:
         security: ERROR
-        data: ERROR
-      keycloak: DEBUG
+        data: DEBUG
+      keycloak: ERROR
     com:
       samsung:
         haystack: DEBUG
       netflix:
-        zuul: DEBUG
+        zuul: ERROR
 endpoints:
   actuator:
     enabled: true
