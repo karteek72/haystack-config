@@ -26,7 +26,7 @@ zuul:
       path: /upload-service/**
       serviceId: upload-service
       stripPrefix: false
-spring:
+security:
   oauth2:
     sso:
       home:
@@ -35,7 +35,7 @@ spring:
     client:
       accessTokenUri: http://ec2-54-87-196-13.compute-1.amazonaws.com/auth/realms/haystack/protocol/openid-connect/token
       userAuthorizationUri: http://ec2-54-87-196-13.compute-1.amazonaws.com/auth/realms/haystack/protocol/openid-connect/auth
-      clientId: acme
-      clientSecret: acmesecret
+      clientId: api-gateway
+      clientSecret: 703af22c-7a22-4478-99e0-2c163a0f3e09
     resource:
-      userInfoUri: http://ec2-54-87-196-13.compute-1.amazonaws.com/auth/realms/Zuul/protocol/openid-connect/userinfo
+      userInfoUri: http://ec2-54-87-196-13.compute-1.amazonaws.com/auth/realms/haystack/protocol/openid-connect/userinfo
