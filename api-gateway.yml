@@ -39,3 +39,4 @@ security:
       clientSecret: 703af22c-7a22-4478-99e0-2c163a0f3e09
     resource:
       userInfoUri: http://ec2-54-87-196-13.compute-1.amazonaws.com/auth/realms/haystack/protocol/openid-connect/userinfo
+    sessions: ALWAYS
