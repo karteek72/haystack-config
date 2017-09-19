@@ -6,7 +6,7 @@ info:
 # Define the port where the API gateway server would be running
 server:
   port: 8765
-  contextPath:
+  contextPath: /api-gateway
 zuul:
   sensitive-headers: Authorization
   ignoredServices: '*'
