@@ -1,15 +1,3 @@
-logging:
-  level:
-    org:
-      springframework:
-        security: ERROR
-        data: DEBUG
-      keycloak: ERROR
-    com:
-      samsung:
-        haystack: DEBUG
-      netflix:
-        zuul: ERROR
 endpoints:
   actuator:
     enabled: true
