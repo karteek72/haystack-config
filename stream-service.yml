@@ -10,12 +10,12 @@ keycloak:
   enabled: true
   enable-basic-auth: false
   realm: haystack
-  auth-server-url:  http://ec2-54-87-196-13.compute-1.amazonaws.com/auth
+  auth-server-url:  http://karteek.local.com/auth
   ssl-required: external # no ssl is ok for demo  - do not use this in production
   public-client: false # we do not write a web-app - so no login page and redirects are necessary
   resource: stream-service
   bearer-only: true  # authentication via accesstoken is fine
   credentials:
-    secret: 3acaf758-be6c-448e-8cc4-b1840bb4215d
+    secret: 2e054228-1f3d-441c-86bd-a9a13b75b735
   use-resource-role-mappings: true
   principal-attribute: preferred_username
