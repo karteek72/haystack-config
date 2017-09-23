@@ -16,6 +16,6 @@ keycloak:
   resource: stream-service
   bearer-only: true  # authentication via accesstoken is fine
   credentials:
-    secret: 2e054228-1f3d-441c-86bd-a9a13b75b735
+    secret: 6d5831fa-3980-4010-9ea1-adbf557f89c9
   use-resource-role-mappings: true
   principal-attribute: preferred_username
