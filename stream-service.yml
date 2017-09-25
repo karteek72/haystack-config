@@ -10,7 +10,7 @@ keycloak:
   enabled: true
   enable-basic-auth: false
   realm: haystack
-  auth-server-url:  http://karteek.local.com/auth
+  auth-server-url:  http://ec2-54-87-196-13.compute-1.amazonaws.com/auth
   ssl-required: external # no ssl is ok for demo  - do not use this in production
   public-client: false # we do not write a web-app - so no login page and redirects are necessary
   resource: stream-service
