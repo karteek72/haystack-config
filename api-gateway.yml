@@ -13,7 +13,7 @@ zuul:
   routes:
     user:
       path: /user/**
-      url: http://karteek.local.com/auth/realms/haystack/protocol/openid-connect/userinfo
+      url: http://samsung.haystack.rtl.com/auth/realms/haystack/protocol/openid-connect/userinfo
     device-service:
       path: /device-service/**
       serviceId: device-service
@@ -33,12 +33,12 @@ security:
         secure: false
         path: /,/**/*.html
     client:
-      accessTokenUri: http://karteek.local.com/auth/realms/haystack/protocol/openid-connect/token
-      userAuthorizationUri: http://karteek.local.com/auth/realms/haystack/protocol/openid-connect/auth
+      accessTokenUri: http://samsung.haystack.rtl.com/auth/realms/haystack/protocol/openid-connect/token
+      userAuthorizationUri: http://samsung.haystack.rtl.com/auth/realms/haystack/protocol/openid-connect/auth
       clientId: api-gateway
       clientSecret: 703af22c-7a22-4478-99e0-2c163a0f3e09
     resource:
-      userInfoUri: http://karteek.local.com/auth/realms/haystack/protocol/openid-connect/userinfo
+      userInfoUri: http://samsung.haystack.rtl.com/auth/realms/haystack/protocol/openid-connect/userinfo
     sessions: ALWAYS
 spring:
   oauth2:
@@ -47,10 +47,10 @@ spring:
         secure: false
         path: /,/**/*.html
     client:
-      accessTokenUri: http://karteek.local.com/auth/realms/haystack/protocol/openid-connect/token
-      userAuthorizationUri: http://karteek.local.com/auth/realms/haystack/protocol/openid-connect/auth
+      accessTokenUri: http://samsung.haystack.rtl.com/auth/realms/haystack/protocol/openid-connect/token
+      userAuthorizationUri: http://samsung.haystack.rtl.com/auth/realms/haystack/protocol/openid-connect/auth
       clientId: api-gateway
       clientSecret: 703af22c-7a22-4478-99e0-2c163a0f3e09
     resource:
-      userInfoUri: http://karteek.local.com/auth/realms/haystack/protocol/openid-connect/userinfo
+      userInfoUri: http://samsung.haystack.rtl.com/auth/realms/haystack/protocol/openid-connect/userinfo
     sessions: ALWAYS
