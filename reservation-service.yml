@@ -15,13 +15,6 @@ spring:
       port: 27017
       database: reservations
 keycloak:
-  enabled: true
-  enable-basic-auth: false
-  ssl-required: external # no ssl is ok for demo  - do not use this in production
-  public-client: false # we do not write a web-app - so no login page and redirects are necessary
   resource: reservation-service
-  bearer-only: true  # authentication via accesstoken is fine
   credentials:
     secret: 29899d5a-ff06-42a6-a8e7-3b055b0cc875
-  use-resource-role-mappings: true
-  principal-attribute: preferred_username

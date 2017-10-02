@@ -19,13 +19,6 @@ spring:
       max-file-size: 25MB
       max-request-size: 25MB
 keycloak:
-  enabled: true
-  enable-basic-auth: false
-  ssl-required: external # no ssl is ok for demo  - do not use this in production
-  public-client: false # we do not write a web-app - so no login page and redirects are necessary
   resource: upload-service
-  bearer-only: true  # authentication via accesstoken is fine
   credentials:
     secret: 9c05d3f9-b8af-400d-9876-9173db088c15
-  use-resource-role-mappings: true
-  principal-attribute: preferred_username

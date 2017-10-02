@@ -13,13 +13,6 @@ spring:
       port: 27017
       database: devices
 keycloak:
-  enabled: true
-  enable-basic-auth: false
-  ssl-required: external # no ssl is ok for demo  - do not use this in production
-  public-client: false # we do not write a web-app - so no login page and redirects are necessary
   resource: device-service
-  bearer-only: true  # authentication via accesstoken is fine
   credentials:
     secret: dc8aab63-ebbf-4e90-9ff5-52d3489f6a1c
-  use-resource-role-mappings: true
-  principal-attribute: preferred_username
