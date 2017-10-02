@@ -13,7 +13,7 @@ zuul:
   routes:
     user:
       path: /user/**
-      url: http://samsung.haystack.rtl.com/auth/realms/haystack/protocol/openid-connect/userinfo
+      url: ${keycloak.auth-server-url}/realms/${keycloak.realm}/protocol/openid-connect/userinfo
     device-service:
       path: /device-service/**
       serviceId: device-service
@@ -33,24 +33,10 @@ security:
         secure: false
         path: /,/**/*.html
     client:
-      accessTokenUri: http://samsung.haystack.rtl.com/auth/realms/haystack/protocol/openid-connect/token
-      userAuthorizationUri: http://samsung.haystack.rtl.com/auth/realms/haystack/protocol/openid-connect/auth
+      accessTokenUri: ${keycloak.auth-server-url}/realms/${keycloak.realm}/protocol/openid-connect/token
+      userAuthorizationUri: ${keycloak.auth-server-url}/realms/${keycloak.realm}/protocol/openid-connect/auth
       clientId: api-gateway
       clientSecret: 703af22c-7a22-4478-99e0-2c163a0f3e09
     resource:
-      userInfoUri: http://samsung.haystack.rtl.com/auth/realms/haystack/protocol/openid-connect/userinfo
-    sessions: ALWAYS
-spring:
-  oauth2:
-    sso:
-      home:
-        secure: false
-        path: /,/**/*.html
-    client:
-      accessTokenUri: http://samsung.haystack.rtl.com/auth/realms/haystack/protocol/openid-connect/token
-      userAuthorizationUri: http://samsung.haystack.rtl.com/auth/realms/haystack/protocol/openid-connect/auth
-      clientId: api-gateway
-      clientSecret: 703af22c-7a22-4478-99e0-2c163a0f3e09
-    resource:
-      userInfoUri: http://samsung.haystack.rtl.com/auth/realms/haystack/protocol/openid-connect/userinfo
+      userInfoUri: ${keycloak.auth-server-url}/realms/${keycloak.realm}/protocol/openid-connect/userinfo
     sessions: ALWAYS

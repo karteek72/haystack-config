@@ -24,3 +24,8 @@ spring:
         health-check-path:  ${server.contextPath}/health
       config:
         enabled: true
+haystack:
+  hostname: samsung.haystack.rtl.com
+keycloak:
+  realm: haystack
+  auth-server-url:  http://${haystack.hostname}/auth
