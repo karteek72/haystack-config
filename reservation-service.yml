@@ -7,12 +7,8 @@ server:
   port: 8087
   contextPath: /reservation-service
 spring:
-  application:
-    name: reservation-service
   data:
     mongodb:
-      host: mongodb
-      port: 27017
       database: reservations
 keycloak:
   resource: reservation-service
