@@ -25,7 +25,7 @@ spring:
       config:
         enabled: true
 haystack:
-  hostname: ec2-54-236-6-176.compute-1.amazonaws.com
+  hostname: samsung.haystack.rtl.com
 keycloak:
   realm: haystack
   auth-server-url:  http://${haystack.hostname}/auth
