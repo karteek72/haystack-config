@@ -7,12 +7,8 @@ server:
   port: 8088
   contextPath: /upload-service
 spring:
-  application:
-    name: upload-service
   data:
     mongodb:
-      host: mongodb
-      port: 27017
       database: user-apks
   http:
     multipart:
