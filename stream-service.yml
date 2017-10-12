@@ -10,3 +10,7 @@ keycloak:
   resource: stream-service
   credentials:
     secret: 6d5831fa-3980-4010-9ea1-adbf557f89c9
+stomp:
+  messageSizeLimit: 41943040
+  bufferSizeLimit: 41943040
+  sendTimeLimit: 60 * 1000
