@@ -13,4 +13,4 @@ keycloak:
 stomp:
   messageSizeLimit: 41943040
   bufferSizeLimit: 41943040
-  sendTimeLimit: 60 * 1000
+  sendTimeLimit: 60000
