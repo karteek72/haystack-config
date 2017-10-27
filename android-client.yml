@@ -1,0 +1,21 @@
+haystack:
+  hostname: haystack-lb-764465164.us-east-1.elb.amazonaws.com
+info:
+  app:
+    description: Haystack Android Application
+    name: Haystack Android
+    version: 1.0-SNAPSHOT
+keycloak:
+  auth-server-url: http://haystack-lb-764465164.us-east-1.elb.amazonaws.com/auth
+  bearer-only: true
+  credentials:
+    clientId: 72404392-0c5b-4f7e-930d-ef51443f2fb2
+    secret: e41f34a4-3333-4fda-abaf-95e00f4eb717
+  enable-basic-auth: false
+  enabled: true
+  principal-attribute: preferred_username
+  public-client: false
+  realm: haystack
+  resource: android-client
+  ssl-required: external
+  use-resource-role-mappings: true
