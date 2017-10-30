@@ -15,7 +15,9 @@ spring:
       host: mongodb
       port: 27017
     rest:
-      base-uri: /api
+      base-path: /api
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
   cloud:
     config:
       uri: http://config-server:8888
