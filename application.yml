@@ -14,6 +14,8 @@ spring:
     mongodb:
       host: mongodb
       port: 27017
+    rest:
+      basePath: /api
   cloud:
     config:
       uri: http://config-server:8888
