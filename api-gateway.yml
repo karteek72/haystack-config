@@ -36,7 +36,7 @@ security:
       accessTokenUri: ${keycloak.auth-server-url}/realms/${keycloak.realm}/protocol/openid-connect/token
       userAuthorizationUri: ${keycloak.auth-server-url}/realms/${keycloak.realm}/protocol/openid-connect/auth
       clientId: api-gateway
-      clientSecret: 703af22c-7a22-4478-99e0-2c163a0f3e09
+      clientSecret: 5607a561-91a0-4d21-8393-a5bb10bdcbd8
     resource:
       userInfoUri: ${keycloak.auth-server-url}/realms/${keycloak.realm}/protocol/openid-connect/userinfo
     sessions: ALWAYS
