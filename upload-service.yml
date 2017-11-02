@@ -18,3 +18,5 @@ keycloak:
   resource: upload-service
   credentials:
     secret: 9c05d3f9-b8af-400d-9876-9173db088c15
+  public-client: false # we do not write a web-app - so no login page and redirects are necessary
+  bearer-only: true  # authentication via accesstoken is fine

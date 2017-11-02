@@ -14,3 +14,5 @@ keycloak:
   resource: reservation-service
   credentials:
     secret: 29899d5a-ff06-42a6-a8e7-3b055b0cc875
+  public-client: false # we do not write a web-app - so no login page and redirects are necessary
+  bearer-only: true  # authentication via accesstoken is fine
