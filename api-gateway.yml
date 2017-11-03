@@ -30,6 +30,10 @@ zuul:
       path: /upload-service/**
       serviceId: upload-service
       stripPrefix: false
+    stream-service:
+      path: /stream-service/**
+      serviceId: stream-service
+      stripPrefix: false
 security:
   oauth2:
     sso:
