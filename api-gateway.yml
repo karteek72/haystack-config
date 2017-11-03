@@ -12,7 +12,7 @@ keycloak:
   credentials:
     secret: 5607a561-91a0-4d21-8393-a5bb10bdcbd8
 zuul:
-  sensitive-headers: Authorization, Cookie, Set-Cookie
+  sensitive-headers: Authorization
   ignoredServices: '*'
   routes:
     user:
@@ -42,6 +42,6 @@ security:
       clientId: api-gateway
       clientSecret: 703af22c-7a22-4478-99e0-2c163a0f3e09
     resource:
-      user-info-uri: ${keycloak.auth-server-url}/realms/${keycloak.realm}/protocol/openid-connect/userinfo
-      prefer-token-info: true
+      userInfoUri: ${keycloak.auth-server-url}/realms/${keycloak.realm}/protocol/openid-connect/userinfo
+      preferTokenInfo: true
     sessions: ALWAYS
