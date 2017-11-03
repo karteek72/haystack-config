@@ -12,7 +12,6 @@ keycloak:
   credentials:
     secret: 5607a561-91a0-4d21-8393-a5bb10bdcbd8
 zuul:
-  #sensitive-headers: Cookie, Set-Cookie
   sensitiveHeaders:  Cookie, Set-Cookie
   ignoredServices: '*'
   routes:
