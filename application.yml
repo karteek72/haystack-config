@@ -33,7 +33,7 @@ spring:
       config:
         enabled: true
 haystack:
-  hostname: haystack-lb-764465164.us-east-1.elb.amazonaws.com
+  hostname: keycloak
 keycloak:
   realm: haystack
   auth-server-url:  http://${haystack.hostname}/auth
